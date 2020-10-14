@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        body{
+            margin: 0;
+        }
         h1{
             color: rgb(139, 51, 0);
             font-size: 5em;
@@ -19,12 +22,64 @@
         .custom-span{
             font-family: 'Courier New', Courier, monospace;
         }
+        .container{
+            display: flex;
+        }
+
+        .item{
+            width: 230px;
+        }
+        .item img{
+            max-width: 100%;
+        }
+
+        .hero{
+            background-image: url("img/bg.jpeg");
+
+            padding: 10em ;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
     </style>
 </head>
 <body>
-    <h1>мир</h1>
-    <div>Lorem ipsum dolor sit amet consectetur <i>adipisicing elit</i>. <em>Porro dolor</em>  consequuntur <b>vitae</b>  exercitationem <strong>totam</strong>  officia, quod, tempore ut, pariatur neque repudiandae esse? <strong>Consequuntur</strong> quos nulla rerum aspernatur esse ipsa veritatis?</div>
 
+    <header class="hero">
+        <h1>мир</h1>
+    </header>
+    
+
+    <div class="container">
+        <div class="item">
+            <img src="img/dog2.jpg">
+            <strong class="strong-red">Consequuntur Lorem ipsum dolor sit amet consectetur</strong>
+        </div>
+        <div class="item">
+            <img src="img/dog1.jpeg">
+            <strong class="strong-red">Consequuntur Lorem ipsum dolor sit amet consectetur</strong>
+        </div>
+        <div class="item">
+            <img src="img/dog1.jpeg">
+            <strong class="strong-red">Consequuntur Lorem ipsum dolor sit amet consectetur</strong>
+        </div>
+        <div class="item">
+            <img src="img/dog1.jpeg">
+            <strong class="strong-red">Consequuntur Lorem ipsum dolor sit amet consectetur</strong>
+        </div>
+        
+        <div class="item">
+            <img src="img/dog2.jpg">
+            <strong class="strong-red">Consequuntur Lorem ipsum dolor sit amet consectetur</strong>
+        </div>
+
+    </div>
+    <div>
+        <img src="img/dog2.jpg" height="100">
+        Lorem ipsum dolor sit amet consectetur <i>adipisicing elit</i>. <em>Porro dolor</em>  consequuntur <b>vitae</b>  exercitationem <strong>totam</strong>  officia, quod, tempore ut, pariatur neque repudiandae esse? <strong>Consequuntur</strong> quos nulla rerum aspernatur esse ipsa veritatis?</div>
+    
     <div>Lorem ipsum dolor sit amet consectetur <i>adipisicing elit</i>. <em>Porro dolor</em>  consequuntur <b>vitae</b>  exercitationem <strong class="strong-red">totam</strong>  officia, quod, tempore ut, pariatur neque repudiandae esse? <strong>Consequuntur</strong> quos nulla rerum <span class="custom-span">aspernatur esse ipsa veritatis?</span> aspernatur esse ipsa veritatis?</div>
+    <img src="img/dog3.png" height="120">
+
+
 </body>
 </html>
